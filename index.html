@@ -8,31 +8,33 @@
 <body>
     <form action="https://formspree.io/f/xpwarnlg" method="post">
         <p>Digite seu nome:</p>
-        <input type="text" name="nome" placeholder="Nome completo">
+        <input type="text" name="nome" placeholder="Nome completo" required> 
         <p>Digite seu e-mail</p>
-        <input type="e-mail" name="email" placeholder="E-mail completo">
-        <p>Digite seu número de telefone</p>
-        <input type="telefone" name="tele" placeholder="Número com DDD">
-        <p>Quantos anos você tem?</p>
-        <input type="number" name="idade" placeholder="ex:21">
-        <p>Está disposto a iniciar amanhã?</p>
-        <input type="radio" name="work" value="sim"> Sim
-        <input type="radio" name="work" value="não"> Não
+        <input type="e-mail" name="email" placeholder="E-mail completo" required>
+        <p>Você trabalha?</p>
+        <input type="radio" name="work" value="sim" required> Sim
+        <input type="radio" name="work" value="não"required> Não
         <br>
-        <p>Em qual desses estados você reside?</p>
+        <p>Selecione seu estado</p>
         <select name="estados">
             <option value="1">Paraná</option>
             <option value="1">São Paulo</option>
             <option value="1">Rio de Janeiro</option>
         </select>
-        <p>Preencha a seguinte pergunta</p>
-        <input type="checkbox" name="novides"> aceito receber novas oportunidades de emprego
+        <p>Selecione sua idade</p>
+        <select name="estados" required>
+            <option value="1">16 á 18</option>
+            <option value="1">18 á 25</option>
+            <option value="1">25 ou mais</option>
+        </select>
+        <p>Deixe aqui sua reclamação</p>
+        <textarea name="feedback" required></textarea>
         <br>
-        <p>O que nós podemos melhorar?</p>
-        <textarea name="feedback"></textarea>
+        <input type="checkbox" name="novides"> Li, concordo
+        <br>
         <br>
         <button type="submit">Enviar</button>
-        <button type="submit">Apagar</button>
+        <button type="submit">Cancelar</button>
         
         
         
